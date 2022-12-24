@@ -36,3 +36,38 @@
     transform: rotate(360deg);
   }
 }
+
+.addTask {
+  height: 30vh;
+  background-color: #61dafb;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+  flex-direction: column;
+}
+
+.task {
+  width: 500px;
+  height: 50px;
+  display: flex;
+  margin: 15px;
+  padding-top: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.task button {
+  width: 25px;
+  height: 25px;
+  margin-left: 20px;
+  text-align: center;
+}
