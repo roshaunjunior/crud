@@ -1,7 +1,21 @@
-export const Task = (props) => {
-    return <div className='task'>
-    <h1 style={{color: props.status ? 'green' : 'red'}}>{props.taskName}</h1>
-    <button onClick={() => props.completeTask(props.id)}> Complete </button>
-    <button onClick={() => props.deleteTask(props.id)}>X</button>
-    </div>
-}
+import {useState , useEffect} from 'react' ;
+
+export const Task = () => {
+
+    const [text , setText] = useState('') ;
+    const handleChange = (event) => {
+      setText(event.target.value) 
+    }
+
+    useEffect(() => {
+        console.log('Component Mounted') ; 
+        return () => {
+            console.log('Component unmounted') ;
+        }
+    },[])
+    return <div>
+        <input onChange={handleChange}/> 
+        
+        {text} 
+    </div> 
+} 
