@@ -7,6 +7,6 @@ A todo list with proper (CRUD) Create, Read , Update and Delete operations in Re
 
 2 ) We can Create a new Task and Render the component of Task with new Id and new taskName.
 
-3 ) We can Update the todoList on that complete Task buuton which Update the todoList by using map() function .
+3 ) We can Update the todoList on that complete Task button which Update the todoList by using map() function .
 
 4 ) We can than finally Delete the task from todoList on that (X) Button by using filter() function .
